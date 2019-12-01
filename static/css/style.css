@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: .4s linear;
+}
+
+body.dark {
+    background-color: #303436;
+    transition: .4s linear;
+}
+
+ul,
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 350px;
+    margin: auto;
+    border: 1px solid #000;
+    height: 100vh;
+}
+
+.container>form {
+    padding: 10px;
+    margin-top: 70px;
+    border-radius: 15px;
+}
+
+.container.dark {
+    border: 1px solid rgb(199, 199, 195);
+    
+}
+
+.container.dark span {
+    color: rgb(199, 199, 195);
+}
+
+.form-control {
+    margin-top: 20px;
+}
+
+.form-control>label {
+    display: block;
+    font-size: 10px;
+    color: rgb(129, 129, 129);
+    margin-bottom: 5px;
+}
+
+.form-control>input {
+    width: calc(100% - 15px);
+    border: none;
+    border-bottom: 2px solid rgb(129, 129, 129);
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    outline: none;
+    transition: .4s linear;
+}
+
+.form-control.dark>input {
+    /* border: 1px solid #000; */
+    border-radius: 3px;
+    box-shadow: inset 0 2px 10px 1px rgba(0, 0, 0, .3), 
+        inset 0 0 0 60px rgba(0, 0, 0, .3),
+        0 1px rgba(255, 255, 255, .08);
+    background: linear-gradient(rgb(70, 70, 70),
+        rgb(120, 120, 120));
+    color: #ccc;
+    transition: .4s linear;
+}
+
+.form-control.dark>input:hover,
+.form-control.dark>input:focus {
+    box-shadow: inset 0 1px 3px 1px  rgba(0,0,0,.5),
+    inset 0 0 0 60px rgba(0,0,0,0),
+    0 1px rgba(255,255,255,.08);
+}
+
+.form-control>input[type='submit'] {
+    /* height: 30px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 0;
+    transition: all .3s;
+}
+
+.form-control>input[type='submit']:hover {
+    transition: all .3s;
+    background-color: rgb(141, 141, 141);
+}
+
+.form-control.dark>input[type='submit']:hover {
+    box-shadow: inset 0 1px 3px 1px  rgba(0,0,0,.5),
+    inset 0 0 0 60px rgba(0,0,0,0),
+    0 1px rgba(255,255,255,.08);
+}
+
+.control {
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.switch {
+    position: relative;
+    height: 30px;
+    width: 55px;
+    background-color: #ececec;
+    border-radius: 100px;
+    transition: background .3s;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+.switch.dark {
+    background-color: #ececec48;
+    transition: background .3s;
+}
+
+.switch>.circle {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-color: #fff;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.336);
+    top: 1px;
+    left: 1px;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.switch.dark>.circle {
+    background-color: rgba(255, 255, 255, 0.493);
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.712);
+}
+
+.switch-active {
+    background-color: #36b32b;
+}
+
+.switch-active.dark {
+    background-color: #ecececc5;
+}
+
+.switch-active>.circle {
+    left: 26px;
+    box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.336);
+    
+}
+
+.switch-active.dark>.circle {
+    box-shadow: -2px 0px 3px 1px rgba(0, 0, 0, 0.151);
+    
+}
+
+.hide {
+    display: none;
+}
