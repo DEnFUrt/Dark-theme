@@ -28,7 +28,6 @@ function setConfigurate(property) {
 function bindSwitchs(switchItems) {
     for(let i = 0; i < switchItems.length; i++) {
         const switchItem = switchItems[i];
-
         switchItem.addEventListener('click', function() {
             switchItem.classList.toggle(classSwitchActive);
             const property = switchItem.getAttribute('data-property');
